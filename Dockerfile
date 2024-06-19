@@ -87,6 +87,8 @@ COPY --from=extract build/target/extracted/spring-boot-loader/ ./
 COPY --from=extract build/target/extracted/snapshot-dependencies/ ./
 COPY --from=extract build/target/extracted/application/ ./
 
+COPY stock.csv /
+
 EXPOSE 8081
 
 ENTRYPOINT [ "java", "org.springframework.boot.loader.JarLauncher" ]
