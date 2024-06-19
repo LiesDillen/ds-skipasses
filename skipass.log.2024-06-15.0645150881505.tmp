@@ -1,0 +1,314 @@
+2024-06-15 21:13:04.083  INFO 7194 --- [main] c.e.springsoap.SkipassRepositoryTest     : Starting SkipassRepositoryTest using Java 17.0.11 on liesvm with PID 7194 (started by lies in /home/lies/Documents/dapp2024/ds_final_project/suppliers/ski_passes)
+2024-06-15 21:13:04.094  INFO 7194 --- [main] c.e.springsoap.SkipassRepositoryTest     : No active profile set, falling back to 1 default profile: "default"
+2024-06-15 21:13:05.003  INFO 7194 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'webServiceConfig' of type [com.example.springsoap.WebServiceConfig$$EnhancerBySpringCGLIB$$7e8e8519] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-15 21:13:05.004  INFO 7194 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$44210a8b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-15 21:13:05.119  INFO 7194 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-06-15 21:13:05.983  INFO 7194 --- [main] c.e.springsoap.SkipassRepositoryTest     : Started SkipassRepositoryTest in 2.327 seconds (JVM running for 3.734)
+2024-06-15 21:13:06.309  INFO 7194 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - 2400af65-586f-4172-a370-2d83867adc43 - Vote request received.
+2024-06-15 21:13:06.311  INFO 7194 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - Stock locked
+2024-06-15 21:13:06.312  INFO 7194 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - Stock locked
+2024-06-15 21:13:06.312  INFO 7194 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - 2400af65-586f-4172-a370-2d83867adc43 - Vote given: VOTE_COMMIT.
+2024-06-15 21:13:06.313  INFO 7194 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - 2400af65-586f-4172-a370-2d83867adc43 - Received booking request with decision: GLOBAL_COMMIT.
+2024-06-15 21:13:06.315  INFO 7194 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 09169365-8ae1-4b7c-b990-dcaddc32bacc - Vote request received.
+2024-06-15 21:13:06.319  INFO 7194 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - Changes made for transactionId: 2400af65-586f-4172-a370-2d83867adc43
+2024-06-15 21:13:06.320  INFO 7194 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - Stock unlocked 2
+2024-06-15 21:13:06.320  INFO 7194 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - Stock unlocked 2
+2024-06-15 21:13:06.320  INFO 7194 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - Stock locked
+2024-06-15 21:13:06.320  INFO 7194 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - Stock locked
+2024-06-15 21:13:06.320  INFO 7194 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 09169365-8ae1-4b7c-b990-dcaddc32bacc - Vote given: VOTE_COMMIT.
+2024-06-15 21:13:06.321  INFO 7194 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 09169365-8ae1-4b7c-b990-dcaddc32bacc - Received booking request with decision: GLOBAL_COMMIT.
+2024-06-15 21:13:06.322  INFO 7194 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - Changes made for transactionId: 09169365-8ae1-4b7c-b990-dcaddc32bacc
+2024-06-15 21:13:06.322  INFO 7194 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - Stock unlocked 2
+2024-06-15 21:13:06.322  INFO 7194 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - Stock unlocked 2
+2024-06-15 21:15:19.815  INFO 7288 --- [main] c.e.springsoap.SkipassRepositoryTest     : Starting SkipassRepositoryTest using Java 17.0.11 on liesvm with PID 7288 (started by lies in /home/lies/Documents/dapp2024/ds_final_project/suppliers/ski_passes)
+2024-06-15 21:15:19.816  INFO 7288 --- [main] c.e.springsoap.SkipassRepositoryTest     : No active profile set, falling back to 1 default profile: "default"
+2024-06-15 21:15:20.546  INFO 7288 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'webServiceConfig' of type [com.example.springsoap.WebServiceConfig$$EnhancerBySpringCGLIB$$6a2ba81f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-15 21:15:20.547  INFO 7288 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$2fbe2d91] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-15 21:15:20.627  INFO 7288 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-06-15 21:15:21.299  INFO 7288 --- [main] c.e.springsoap.SkipassRepositoryTest     : Started SkipassRepositoryTest in 1.78 seconds (JVM running for 3.003)
+2024-06-15 21:15:21.583  INFO 7288 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - ff403b39-49f2-4303-bcff-e3deb51d507c - Vote request received.
+2024-06-15 21:15:21.586  INFO 7288 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - Stock locked
+2024-06-15 21:15:21.587  INFO 7288 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - Stock locked
+2024-06-15 21:15:21.587  INFO 7288 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - ff403b39-49f2-4303-bcff-e3deb51d507c - Vote given: VOTE_COMMIT.
+2024-06-15 21:15:21.587  INFO 7288 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - ff403b39-49f2-4303-bcff-e3deb51d507c - Received booking request with decision: GLOBAL_COMMIT.
+2024-06-15 21:15:21.590  INFO 7288 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - Changes made for transactionId: ff403b39-49f2-4303-bcff-e3deb51d507c
+2024-06-15 21:15:21.591  INFO 7288 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - Stock unlocked 2
+2024-06-15 21:15:21.591  INFO 7288 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - Stock unlocked 2
+2024-06-15 21:15:21.591  INFO 7288 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 5a5fa5c2-1b9a-4874-8e5f-96b8492d312f - Vote request received.
+2024-06-15 21:15:21.591  INFO 7288 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - Stock locked
+2024-06-15 21:15:21.591  INFO 7288 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - Stock locked
+2024-06-15 21:15:21.591  INFO 7288 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 5a5fa5c2-1b9a-4874-8e5f-96b8492d312f - Vote given: VOTE_COMMIT.
+2024-06-15 21:15:21.592  INFO 7288 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 5a5fa5c2-1b9a-4874-8e5f-96b8492d312f - Received booking request with decision: GLOBAL_COMMIT.
+2024-06-15 21:15:21.592  INFO 7288 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - Changes made for transactionId: 5a5fa5c2-1b9a-4874-8e5f-96b8492d312f
+2024-06-15 21:15:21.592  INFO 7288 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - Stock unlocked 2
+2024-06-15 21:15:21.592  INFO 7288 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - Stock unlocked 2
+2024-06-15 21:25:51.783  INFO 7400 --- [main] c.e.springsoap.SkipassRepositoryTest     : Starting SkipassRepositoryTest using Java 17.0.11 on liesvm with PID 7400 (started by lies in /home/lies/Documents/dapp2024/ds_final_project/suppliers/ski_passes)
+2024-06-15 21:25:51.785  INFO 7400 --- [main] c.e.springsoap.SkipassRepositoryTest     : No active profile set, falling back to 1 default profile: "default"
+2024-06-15 21:25:52.686  INFO 7400 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'webServiceConfig' of type [com.example.springsoap.WebServiceConfig$$EnhancerBySpringCGLIB$$e0ba0010] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-15 21:25:52.687  INFO 7400 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$a64c8582] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-15 21:25:52.737  INFO 7400 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-06-15 21:25:53.323  INFO 7400 --- [main] c.e.springsoap.SkipassRepositoryTest     : Started SkipassRepositoryTest in 1.932 seconds (JVM running for 3.387)
+2024-06-15 21:25:53.638  INFO 7400 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - e3552285-4140-432f-a2f9-2e53e0ae7d8e - Vote request received.
+2024-06-15 21:25:53.641  INFO 7400 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - Stock locked
+2024-06-15 21:25:53.641  INFO 7400 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - Stock locked
+2024-06-15 21:25:53.641  INFO 7400 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - e3552285-4140-432f-a2f9-2e53e0ae7d8e - Vote given: VOTE_COMMIT.
+2024-06-15 21:25:53.642  INFO 7400 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - e3552285-4140-432f-a2f9-2e53e0ae7d8e - Received booking request with decision: GLOBAL_COMMIT.
+2024-06-15 21:25:53.645  INFO 7400 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 94acd77c-3cfe-4ae6-bb75-81fec8921dbe - Vote request received.
+2024-06-15 21:25:53.650  INFO 7400 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - Changes made for transactionId: e3552285-4140-432f-a2f9-2e53e0ae7d8e
+2024-06-15 21:25:53.651  INFO 7400 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - Stock locked
+2024-06-15 21:25:53.651  INFO 7400 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - Stock unlocked 2
+2024-06-15 21:25:53.651  INFO 7400 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - Stock locked
+2024-06-15 21:25:53.651  INFO 7400 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 94acd77c-3cfe-4ae6-bb75-81fec8921dbe - Vote given: VOTE_COMMIT.
+2024-06-15 21:25:53.651  INFO 7400 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 94acd77c-3cfe-4ae6-bb75-81fec8921dbe - Received booking request with decision: GLOBAL_COMMIT.
+2024-06-15 21:25:53.652  INFO 7400 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - Changes made for transactionId: 94acd77c-3cfe-4ae6-bb75-81fec8921dbe
+2024-06-15 21:25:53.652  INFO 7400 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - Stock unlocked 2
+2024-06-15 21:25:53.652  INFO 7400 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - Stock unlocked 2
+2024-06-15 21:25:53.653  INFO 7400 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - Stock unlocked 2
+2024-06-15 21:36:47.010  INFO 7604 --- [main] c.e.springsoap.SkipassRepositoryTest     : Starting SkipassRepositoryTest using Java 17.0.11 on liesvm with PID 7604 (started by lies in /home/lies/Documents/dapp2024/ds_final_project/suppliers/ski_passes)
+2024-06-15 21:36:47.012  INFO 7604 --- [main] c.e.springsoap.SkipassRepositoryTest     : No active profile set, falling back to 1 default profile: "default"
+2024-06-15 21:36:47.773  INFO 7604 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'webServiceConfig' of type [com.example.springsoap.WebServiceConfig$$EnhancerBySpringCGLIB$$6a2ba81f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-15 21:36:47.777  INFO 7604 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$2fbe2d91] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-15 21:36:47.821  INFO 7604 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-06-15 21:36:48.615  INFO 7604 --- [main] c.e.springsoap.SkipassRepositoryTest     : Started SkipassRepositoryTest in 2.091 seconds (JVM running for 3.9)
+2024-06-15 21:36:48.954  INFO 7604 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - b7c6e4aa-c313-4f1e-b6b6-24405e4c66e9 - Vote request received.
+2024-06-15 21:36:48.956  INFO 7604 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - b7c6e4aa-c313-4f1e-b6b6-24405e4c66e9 - Stock locked
+2024-06-15 21:36:48.957  INFO 7604 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - b7c6e4aa-c313-4f1e-b6b6-24405e4c66e9 - Stock locked
+2024-06-15 21:36:48.957  INFO 7604 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - b7c6e4aa-c313-4f1e-b6b6-24405e4c66e9 - Vote given: VOTE_COMMIT.
+2024-06-15 21:36:48.957  INFO 7604 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - b7c6e4aa-c313-4f1e-b6b6-24405e4c66e9 - Received booking request with decision: GLOBAL_COMMIT.
+2024-06-15 21:36:48.960  INFO 7604 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 96c042f3-1239-4353-8f2c-6d1c06a427b6 - Vote request received.
+2024-06-15 21:36:48.963  INFO 7604 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - Changes made for transactionId: b7c6e4aa-c313-4f1e-b6b6-24405e4c66e9
+2024-06-15 21:36:48.963  INFO 7604 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 96c042f3-1239-4353-8f2c-6d1c06a427b6 - Stock locked
+2024-06-15 21:36:48.964  INFO 7604 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - b7c6e4aa-c313-4f1e-b6b6-24405e4c66e9 - Stock unlocked 2
+2024-06-15 21:36:48.964  INFO 7604 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 96c042f3-1239-4353-8f2c-6d1c06a427b6 - Stock locked
+2024-06-15 21:36:48.964  INFO 7604 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 96c042f3-1239-4353-8f2c-6d1c06a427b6 - Vote given: VOTE_COMMIT.
+2024-06-15 21:36:48.964  INFO 7604 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 96c042f3-1239-4353-8f2c-6d1c06a427b6 - Received booking request with decision: GLOBAL_COMMIT.
+2024-06-15 21:36:48.965  INFO 7604 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - Changes made for transactionId: 96c042f3-1239-4353-8f2c-6d1c06a427b6
+2024-06-15 21:36:48.965  INFO 7604 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 96c042f3-1239-4353-8f2c-6d1c06a427b6 - Stock unlocked 2
+2024-06-15 21:36:48.965  INFO 7604 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 96c042f3-1239-4353-8f2c-6d1c06a427b6 - Stock unlocked 2
+2024-06-15 21:36:48.965  INFO 7604 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - b7c6e4aa-c313-4f1e-b6b6-24405e4c66e9 - Stock unlocked 2
+2024-06-15 21:52:55.486  INFO 8245 --- [main] c.e.springsoap.SkipassRepositoryTest     : Starting SkipassRepositoryTest using Java 17.0.11 on liesvm with PID 8245 (started by lies in /home/lies/Documents/dapp2024/ds_final_project/suppliers/ski_passes)
+2024-06-15 21:52:55.487  INFO 8245 --- [main] c.e.springsoap.SkipassRepositoryTest     : No active profile set, falling back to 1 default profile: "default"
+2024-06-15 21:52:56.459  INFO 8245 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'webServiceConfig' of type [com.example.springsoap.WebServiceConfig$$EnhancerBySpringCGLIB$$6a6b40b6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-15 21:52:56.461  INFO 8245 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$2ffdc628] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-15 21:52:56.512  INFO 8245 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-06-15 21:52:57.330  INFO 8245 --- [main] c.e.springsoap.SkipassRepositoryTest     : Started SkipassRepositoryTest in 2.472 seconds (JVM running for 4.211)
+2024-06-15 21:52:57.785  INFO 8245 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - e2d63d1a-23ca-496e-b048-426a4d1dc227 - Vote request received.
+2024-06-15 21:52:57.791 ERROR 8245 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - e2d63d1a-23ca-496e-b048-426a4d1dc227 - Insufficient stock for requested type CHILD for vote phase.
+2024-06-15 21:52:57.792 ERROR 8245 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - e2d63d1a-23ca-496e-b048-426a4d1dc227 - Insufficient stock for requested type STUDENT for vote phase.
+2024-06-15 21:52:57.792  INFO 8245 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - e2d63d1a-23ca-496e-b048-426a4d1dc227 - Stock locked
+2024-06-15 21:52:57.793  INFO 8245 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - e2d63d1a-23ca-496e-b048-426a4d1dc227 - Stock locked
+2024-06-15 21:52:57.793  INFO 8245 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - e2d63d1a-23ca-496e-b048-426a4d1dc227 - Vote given: VOTE_ABORT.
+2024-06-15 21:52:57.796  INFO 8245 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 97db0ae0-e08a-4b47-a5b5-36388cc19d9e - Vote request received.
+2024-06-15 21:52:57.797 ERROR 8245 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 97db0ae0-e08a-4b47-a5b5-36388cc19d9e - Insufficient stock for requested type CHILD for vote phase.
+2024-06-15 21:52:57.797 ERROR 8245 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 97db0ae0-e08a-4b47-a5b5-36388cc19d9e - Insufficient stock for requested type STUDENT for vote phase.
+2024-06-15 21:53:24.734  INFO 8327 --- [main] c.e.springsoap.SkipassRepositoryTest     : Starting SkipassRepositoryTest using Java 17.0.11 on liesvm with PID 8327 (started by lies in /home/lies/Documents/dapp2024/ds_final_project/suppliers/ski_passes)
+2024-06-15 21:53:24.735  INFO 8327 --- [main] c.e.springsoap.SkipassRepositoryTest     : No active profile set, falling back to 1 default profile: "default"
+2024-06-15 21:53:25.607  INFO 8327 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'webServiceConfig' of type [com.example.springsoap.WebServiceConfig$$EnhancerBySpringCGLIB$$4927a5c2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-15 21:53:25.608  INFO 8327 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$eba2b34] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-15 21:53:25.660  INFO 8327 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-06-15 21:53:26.420  INFO 8327 --- [main] c.e.springsoap.SkipassRepositoryTest     : Started SkipassRepositoryTest in 2.014 seconds (JVM running for 3.204)
+2024-06-15 21:53:26.707  INFO 8327 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - c193413b-3d45-4996-b2f2-975c78326a18 - Vote request received.
+2024-06-15 21:53:26.708  INFO 8327 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - c193413b-3d45-4996-b2f2-975c78326a18 - Stock locked
+2024-06-15 21:53:26.709  INFO 8327 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - c193413b-3d45-4996-b2f2-975c78326a18 - Stock locked
+2024-06-15 21:53:26.709  INFO 8327 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - c193413b-3d45-4996-b2f2-975c78326a18 - Vote given: VOTE_COMMIT.
+2024-06-15 21:53:26.709  INFO 8327 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - c193413b-3d45-4996-b2f2-975c78326a18 - Received booking request with decision: GLOBAL_COMMIT.
+2024-06-15 21:53:26.718  INFO 8327 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - Changes made for transactionId: c193413b-3d45-4996-b2f2-975c78326a18
+2024-06-15 21:53:26.719  INFO 8327 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - c193413b-3d45-4996-b2f2-975c78326a18 - Stock unlocked 2
+2024-06-15 21:53:26.721  INFO 8327 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - c193413b-3d45-4996-b2f2-975c78326a18 - Stock unlocked 2
+2024-06-15 21:53:26.786  INFO 8327 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - f8cc659f-f468-4850-a82b-3b4081c1ac41 - Vote request received.
+2024-06-15 21:53:26.788  INFO 8327 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - f8cc659f-f468-4850-a82b-3b4081c1ac41 - Stock locked
+2024-06-15 21:53:26.798  INFO 8327 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - f8cc659f-f468-4850-a82b-3b4081c1ac41 - Stock locked
+2024-06-15 21:53:26.799  INFO 8327 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - f8cc659f-f468-4850-a82b-3b4081c1ac41 - Vote given: VOTE_COMMIT.
+2024-06-15 21:53:26.799  INFO 8327 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - f8cc659f-f468-4850-a82b-3b4081c1ac41 - Received booking request with decision: GLOBAL_COMMIT.
+2024-06-15 21:53:26.814  INFO 8327 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - Changes made for transactionId: f8cc659f-f468-4850-a82b-3b4081c1ac41
+2024-06-15 21:53:26.814  INFO 8327 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - f8cc659f-f468-4850-a82b-3b4081c1ac41 - Stock unlocked 2
+2024-06-15 21:53:26.814  INFO 8327 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - f8cc659f-f468-4850-a82b-3b4081c1ac41 - Stock unlocked 2
+2024-06-15 21:54:36.284  INFO 8398 --- [main] c.e.springsoap.SkipassRepositoryTest     : Starting SkipassRepositoryTest using Java 17.0.11 on liesvm with PID 8398 (started by lies in /home/lies/Documents/dapp2024/ds_final_project/suppliers/ski_passes)
+2024-06-15 21:54:36.286  INFO 8398 --- [main] c.e.springsoap.SkipassRepositoryTest     : No active profile set, falling back to 1 default profile: "default"
+2024-06-15 21:54:36.957  INFO 8398 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'webServiceConfig' of type [com.example.springsoap.WebServiceConfig$$EnhancerBySpringCGLIB$$76de66af] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-15 21:54:36.959  INFO 8398 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$3c70ec21] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-15 21:54:37.000  INFO 8398 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-06-15 21:54:37.874  INFO 8398 --- [main] c.e.springsoap.SkipassRepositoryTest     : Started SkipassRepositoryTest in 1.924 seconds (JVM running for 3.249)
+2024-06-15 21:54:38.289  INFO 8398 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - 7b9d8979-3bab-4958-a3ad-09813c3e18fa - Vote request received.
+2024-06-15 21:54:38.301 ERROR 8398 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - 7b9d8979-3bab-4958-a3ad-09813c3e18fa - Insufficient stock for requested type CHILD for vote phase.
+2024-06-15 21:54:38.307 ERROR 8398 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - 7b9d8979-3bab-4958-a3ad-09813c3e18fa - Insufficient stock for requested type STUDENT for vote phase.
+2024-06-15 21:54:38.307  INFO 8398 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - 7b9d8979-3bab-4958-a3ad-09813c3e18fa - Stock locked
+2024-06-15 21:54:38.308  INFO 8398 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - 7b9d8979-3bab-4958-a3ad-09813c3e18fa - Stock locked
+2024-06-15 21:54:38.308  INFO 8398 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - 7b9d8979-3bab-4958-a3ad-09813c3e18fa - Vote given: VOTE_ABORT.
+2024-06-15 21:54:38.315  INFO 8398 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 93e45855-da84-499d-ad24-3c583ff1d542 - Vote request received.
+2024-06-15 21:54:38.316 ERROR 8398 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 93e45855-da84-499d-ad24-3c583ff1d542 - Insufficient stock for requested type CHILD for vote phase.
+2024-06-15 21:54:38.316 ERROR 8398 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 93e45855-da84-499d-ad24-3c583ff1d542 - Insufficient stock for requested type STUDENT for vote phase.
+2024-06-15 21:54:54.631  INFO 8467 --- [main] c.e.springsoap.SkipassRepositoryTest     : Starting SkipassRepositoryTest using Java 17.0.11 on liesvm with PID 8467 (started by lies in /home/lies/Documents/dapp2024/ds_final_project/suppliers/ski_passes)
+2024-06-15 21:54:54.632  INFO 8467 --- [main] c.e.springsoap.SkipassRepositoryTest     : No active profile set, falling back to 1 default profile: "default"
+2024-06-15 21:54:55.386  INFO 8467 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'webServiceConfig' of type [com.example.springsoap.WebServiceConfig$$EnhancerBySpringCGLIB$$76de66af] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-15 21:54:55.387  INFO 8467 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$3c70ec21] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-15 21:54:55.427  INFO 8467 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-06-15 21:54:55.984  INFO 8467 --- [main] c.e.springsoap.SkipassRepositoryTest     : Started SkipassRepositoryTest in 1.716 seconds (JVM running for 3.069)
+2024-06-15 21:54:56.341  INFO 8467 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - 0ba4c08e-7811-4e44-b7a6-356274f4fe1c - Vote request received.
+2024-06-15 21:54:56.344  INFO 8467 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 62c403f3-97e2-453c-b233-504b3e95fe63 - Vote request received.
+2024-06-15 21:54:56.345  INFO 8467 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 62c403f3-97e2-453c-b233-504b3e95fe63 - Stock locked
+2024-06-15 21:54:56.346  INFO 8467 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 62c403f3-97e2-453c-b233-504b3e95fe63 - Stock locked
+2024-06-15 21:54:56.346  INFO 8467 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 62c403f3-97e2-453c-b233-504b3e95fe63 - Vote given: VOTE_COMMIT.
+2024-06-15 21:54:56.346  INFO 8467 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 62c403f3-97e2-453c-b233-504b3e95fe63 - Received booking request with decision: GLOBAL_COMMIT.
+2024-06-15 21:54:56.353  INFO 8467 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - Changes made for transactionId: 62c403f3-97e2-453c-b233-504b3e95fe63
+2024-06-15 21:54:56.358  INFO 8467 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 62c403f3-97e2-453c-b233-504b3e95fe63 - Stock unlocked 2
+2024-06-15 21:54:56.358  INFO 8467 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - 0ba4c08e-7811-4e44-b7a6-356274f4fe1c - Stock locked
+2024-06-15 21:54:56.358  INFO 8467 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 62c403f3-97e2-453c-b233-504b3e95fe63 - Stock unlocked 2
+2024-06-15 21:54:56.358  INFO 8467 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - 0ba4c08e-7811-4e44-b7a6-356274f4fe1c - Stock locked
+2024-06-15 21:54:56.360  INFO 8467 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - 0ba4c08e-7811-4e44-b7a6-356274f4fe1c - Vote given: VOTE_COMMIT.
+2024-06-15 21:54:56.360  INFO 8467 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - 0ba4c08e-7811-4e44-b7a6-356274f4fe1c - Received booking request with decision: GLOBAL_COMMIT.
+2024-06-15 21:54:56.361  INFO 8467 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - Changes made for transactionId: 0ba4c08e-7811-4e44-b7a6-356274f4fe1c
+2024-06-15 21:54:56.361  INFO 8467 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - 0ba4c08e-7811-4e44-b7a6-356274f4fe1c - Stock unlocked 2
+2024-06-15 21:54:56.361  INFO 8467 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - 0ba4c08e-7811-4e44-b7a6-356274f4fe1c - Stock unlocked 2
+2024-06-15 21:57:03.227  INFO 8544 --- [main] c.e.springsoap.SkipassRepositoryTest     : Starting SkipassRepositoryTest using Java 17.0.11 on liesvm with PID 8544 (started by lies in /home/lies/Documents/dapp2024/ds_final_project/suppliers/ski_passes)
+2024-06-15 21:57:03.233  INFO 8544 --- [main] c.e.springsoap.SkipassRepositoryTest     : No active profile set, falling back to 1 default profile: "default"
+2024-06-15 21:57:04.183  INFO 8544 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'webServiceConfig' of type [com.example.springsoap.WebServiceConfig$$EnhancerBySpringCGLIB$$3183de00] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-15 21:57:04.188  INFO 8544 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$f7166372] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-15 21:57:04.260  INFO 8544 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-06-15 21:57:05.569  INFO 8544 --- [main] c.e.springsoap.SkipassRepositoryTest     : Started SkipassRepositoryTest in 2.661 seconds (JVM running for 3.867)
+2024-06-15 21:57:06.017  INFO 8544 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - ae3a9287-e059-4c25-b26a-2d8b6badb78a - Vote request received.
+2024-06-15 21:57:06.018  INFO 8544 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - ae3a9287-e059-4c25-b26a-2d8b6badb78a - Stock locked
+2024-06-15 21:57:06.019  INFO 8544 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - ae3a9287-e059-4c25-b26a-2d8b6badb78a - Stock locked
+2024-06-15 21:57:06.019  INFO 8544 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - ae3a9287-e059-4c25-b26a-2d8b6badb78a - Vote given: VOTE_COMMIT.
+2024-06-15 21:57:06.019  INFO 8544 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - ae3a9287-e059-4c25-b26a-2d8b6badb78a - Received booking request with decision: GLOBAL_COMMIT.
+2024-06-15 21:57:06.024  INFO 8544 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - Changes made for transactionId: ae3a9287-e059-4c25-b26a-2d8b6badb78a
+2024-06-15 21:57:06.024  INFO 8544 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - ae3a9287-e059-4c25-b26a-2d8b6badb78a - Stock unlocked 2
+2024-06-15 21:57:06.024  INFO 8544 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - ae3a9287-e059-4c25-b26a-2d8b6badb78a - Stock unlocked 2
+2024-06-15 21:57:06.034  INFO 8544 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - b177bf98-a5b8-4394-9a19-741cf85f93c8 - Vote request received.
+2024-06-15 21:57:06.034  INFO 8544 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - b177bf98-a5b8-4394-9a19-741cf85f93c8 - Stock locked
+2024-06-15 21:57:06.034  INFO 8544 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - b177bf98-a5b8-4394-9a19-741cf85f93c8 - Stock locked
+2024-06-15 21:57:06.034  INFO 8544 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - b177bf98-a5b8-4394-9a19-741cf85f93c8 - Vote given: VOTE_COMMIT.
+2024-06-15 21:57:06.034  INFO 8544 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - b177bf98-a5b8-4394-9a19-741cf85f93c8 - Received booking request with decision: GLOBAL_COMMIT.
+2024-06-15 21:57:06.035  INFO 8544 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - Changes made for transactionId: b177bf98-a5b8-4394-9a19-741cf85f93c8
+2024-06-15 21:57:06.035  INFO 8544 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - b177bf98-a5b8-4394-9a19-741cf85f93c8 - Stock unlocked 2
+2024-06-15 21:57:06.035  INFO 8544 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - b177bf98-a5b8-4394-9a19-741cf85f93c8 - Stock unlocked 2
+2024-06-15 21:58:00.418  INFO 8602 --- [main] c.e.springsoap.SkipassRepositoryTest     : Starting SkipassRepositoryTest using Java 17.0.11 on liesvm with PID 8602 (started by lies in /home/lies/Documents/dapp2024/ds_final_project/suppliers/ski_passes)
+2024-06-15 21:58:00.421  INFO 8602 --- [main] c.e.springsoap.SkipassRepositoryTest     : No active profile set, falling back to 1 default profile: "default"
+2024-06-15 21:58:01.296  INFO 8602 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'webServiceConfig' of type [com.example.springsoap.WebServiceConfig$$EnhancerBySpringCGLIB$$6a2ba81f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-15 21:58:01.297  INFO 8602 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$2fbe2d91] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-15 21:58:01.347  INFO 8602 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-06-15 21:58:02.037  INFO 8602 --- [main] c.e.springsoap.SkipassRepositoryTest     : Started SkipassRepositoryTest in 2.085 seconds (JVM running for 3.27)
+2024-06-15 21:58:02.322  INFO 8602 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - bed39706-bbdf-4ec0-9ead-505c6401642c - Vote request received.
+2024-06-15 21:58:02.323  INFO 8602 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - bed39706-bbdf-4ec0-9ead-505c6401642c - Stock locked
+2024-06-15 21:58:02.323  INFO 8602 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - bed39706-bbdf-4ec0-9ead-505c6401642c - Stock locked
+2024-06-15 21:58:02.324  INFO 8602 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - bed39706-bbdf-4ec0-9ead-505c6401642c - Vote given: VOTE_COMMIT.
+2024-06-15 21:58:02.324  INFO 8602 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - bed39706-bbdf-4ec0-9ead-505c6401642c - Received booking request with decision: GLOBAL_COMMIT.
+2024-06-15 21:58:02.325  INFO 8602 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - faa5b7b2-a930-496e-8f25-831b952b0013 - Vote request received.
+2024-06-15 21:58:02.331  INFO 8602 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - Changes made for transactionId: bed39706-bbdf-4ec0-9ead-505c6401642c
+2024-06-15 21:58:02.334  INFO 8602 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - bed39706-bbdf-4ec0-9ead-505c6401642c - Stock unlocked 2
+2024-06-15 21:58:02.334  INFO 8602 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - faa5b7b2-a930-496e-8f25-831b952b0013 - Stock locked
+2024-06-15 21:58:02.334  INFO 8602 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - faa5b7b2-a930-496e-8f25-831b952b0013 - Stock locked
+2024-06-15 21:58:02.334  INFO 8602 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - bed39706-bbdf-4ec0-9ead-505c6401642c - Stock unlocked 2
+2024-06-15 21:58:02.334  INFO 8602 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - faa5b7b2-a930-496e-8f25-831b952b0013 - Vote given: VOTE_COMMIT.
+2024-06-15 21:58:02.335  INFO 8602 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - faa5b7b2-a930-496e-8f25-831b952b0013 - Received booking request with decision: GLOBAL_COMMIT.
+2024-06-15 21:58:02.335  INFO 8602 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - Changes made for transactionId: faa5b7b2-a930-496e-8f25-831b952b0013
+2024-06-15 21:58:02.336  INFO 8602 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - faa5b7b2-a930-496e-8f25-831b952b0013 - Stock unlocked 2
+2024-06-15 21:58:02.336  INFO 8602 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - faa5b7b2-a930-496e-8f25-831b952b0013 - Stock unlocked 2
+2024-06-15 21:58:48.849  INFO 8684 --- [main] c.e.springsoap.SkipassRepositoryTest     : Starting SkipassRepositoryTest using Java 17.0.11 on liesvm with PID 8684 (started by lies in /home/lies/Documents/dapp2024/ds_final_project/suppliers/ski_passes)
+2024-06-15 21:58:48.851  INFO 8684 --- [main] c.e.springsoap.SkipassRepositoryTest     : No active profile set, falling back to 1 default profile: "default"
+2024-06-15 21:58:49.529  INFO 8684 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'webServiceConfig' of type [com.example.springsoap.WebServiceConfig$$EnhancerBySpringCGLIB$$4a632b03] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-15 21:58:49.530  INFO 8684 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$ff5b075] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-15 21:58:49.561  INFO 8684 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-06-15 21:58:50.281  INFO 8684 --- [main] c.e.springsoap.SkipassRepositoryTest     : Started SkipassRepositoryTest in 1.862 seconds (JVM running for 3.078)
+2024-06-15 21:58:50.621  INFO 8684 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - 867b2c95-87cb-4798-a5c6-4724646678ed - Vote request received.
+2024-06-15 21:58:50.623  INFO 8684 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - 867b2c95-87cb-4798-a5c6-4724646678ed - Stock locked
+2024-06-15 21:58:50.623  INFO 8684 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - 867b2c95-87cb-4798-a5c6-4724646678ed - Stock locked
+2024-06-15 21:58:50.623  INFO 8684 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - 867b2c95-87cb-4798-a5c6-4724646678ed - Vote given: VOTE_COMMIT.
+2024-06-15 21:58:50.623  INFO 8684 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - 867b2c95-87cb-4798-a5c6-4724646678ed - Received booking request with decision: GLOBAL_COMMIT.
+2024-06-15 21:58:50.636  INFO 8684 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 1518751c-1d7c-428a-97eb-b403a21d9054 - Vote request received.
+2024-06-15 21:58:50.638  INFO 8684 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - Changes made for transactionId: 867b2c95-87cb-4798-a5c6-4724646678ed
+2024-06-15 21:58:50.639  INFO 8684 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 1518751c-1d7c-428a-97eb-b403a21d9054 - Stock locked
+2024-06-15 21:58:50.639  INFO 8684 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - 867b2c95-87cb-4798-a5c6-4724646678ed - Stock unlocked 2
+2024-06-15 21:58:50.641  INFO 8684 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - 867b2c95-87cb-4798-a5c6-4724646678ed - Stock unlocked 2
+2024-06-15 21:58:50.641  INFO 8684 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 1518751c-1d7c-428a-97eb-b403a21d9054 - Stock locked
+2024-06-15 21:58:50.642  INFO 8684 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 1518751c-1d7c-428a-97eb-b403a21d9054 - Vote given: VOTE_COMMIT.
+2024-06-15 21:58:50.642  INFO 8684 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 1518751c-1d7c-428a-97eb-b403a21d9054 - Received booking request with decision: GLOBAL_COMMIT.
+2024-06-15 21:58:50.643  INFO 8684 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - Changes made for transactionId: 1518751c-1d7c-428a-97eb-b403a21d9054
+2024-06-15 21:58:50.643  INFO 8684 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 1518751c-1d7c-428a-97eb-b403a21d9054 - Stock unlocked 2
+2024-06-15 21:58:50.643  INFO 8684 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 1518751c-1d7c-428a-97eb-b403a21d9054 - Stock unlocked 2
+2024-06-15 21:59:04.365  INFO 8748 --- [main] c.e.springsoap.SkipassRepositoryTest     : Starting SkipassRepositoryTest using Java 17.0.11 on liesvm with PID 8748 (started by lies in /home/lies/Documents/dapp2024/ds_final_project/suppliers/ski_passes)
+2024-06-15 21:59:04.367  INFO 8748 --- [main] c.e.springsoap.SkipassRepositoryTest     : No active profile set, falling back to 1 default profile: "default"
+2024-06-15 21:59:05.159  INFO 8748 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'webServiceConfig' of type [com.example.springsoap.WebServiceConfig$$EnhancerBySpringCGLIB$$4a632b03] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-15 21:59:05.161  INFO 8748 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$ff5b075] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-15 21:59:05.235  INFO 8748 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-06-15 21:59:06.177  INFO 8748 --- [main] c.e.springsoap.SkipassRepositoryTest     : Started SkipassRepositoryTest in 2.065 seconds (JVM running for 3.211)
+2024-06-15 21:59:06.598  INFO 8748 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - f7706079-49e9-4b6c-ae58-8448a38c40e0 - Vote request received.
+2024-06-15 21:59:06.599  INFO 8748 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - f7706079-49e9-4b6c-ae58-8448a38c40e0 - Stock locked
+2024-06-15 21:59:06.600  INFO 8748 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - f7706079-49e9-4b6c-ae58-8448a38c40e0 - Stock locked
+2024-06-15 21:59:06.600  INFO 8748 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - f7706079-49e9-4b6c-ae58-8448a38c40e0 - Vote given: VOTE_COMMIT.
+2024-06-15 21:59:06.600  INFO 8748 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - f7706079-49e9-4b6c-ae58-8448a38c40e0 - Received booking request with decision: GLOBAL_COMMIT.
+2024-06-15 21:59:06.602  INFO 8748 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - fe7df0ad-74b4-4a94-9d68-ec4bc93e0f4c - Vote request received.
+2024-06-15 21:59:06.625  INFO 8748 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - Changes made for transactionId: f7706079-49e9-4b6c-ae58-8448a38c40e0
+2024-06-15 21:59:06.628  INFO 8748 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - f7706079-49e9-4b6c-ae58-8448a38c40e0 - Stock unlocked 2
+2024-06-15 21:59:06.629  INFO 8748 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - fe7df0ad-74b4-4a94-9d68-ec4bc93e0f4c - Stock locked
+2024-06-15 21:59:06.629  INFO 8748 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - fe7df0ad-74b4-4a94-9d68-ec4bc93e0f4c - Stock locked
+2024-06-15 21:59:06.629  INFO 8748 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - fe7df0ad-74b4-4a94-9d68-ec4bc93e0f4c - Vote given: VOTE_COMMIT.
+2024-06-15 21:59:06.629  INFO 8748 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - fe7df0ad-74b4-4a94-9d68-ec4bc93e0f4c - Received booking request with decision: GLOBAL_COMMIT.
+2024-06-15 21:59:06.629  INFO 8748 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - f7706079-49e9-4b6c-ae58-8448a38c40e0 - Stock unlocked 2
+2024-06-15 21:59:06.630  INFO 8748 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - Changes made for transactionId: fe7df0ad-74b4-4a94-9d68-ec4bc93e0f4c
+2024-06-15 21:59:06.630  INFO 8748 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - fe7df0ad-74b4-4a94-9d68-ec4bc93e0f4c - Stock unlocked 2
+2024-06-15 21:59:06.630  INFO 8748 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - fe7df0ad-74b4-4a94-9d68-ec4bc93e0f4c - Stock unlocked 2
+2024-06-15 22:23:06.556  INFO 9223 --- [main] c.e.springsoap.SpringSoapApplication     : Starting SpringSoapApplication using Java 17.0.11 on liesvm with PID 9223 (/home/lies/Documents/dapp2024/ds_final_project/suppliers/ski_passes/target/classes started by lies in /home/lies/Documents/dapp2024/ds_final_project/suppliers/ski_passes)
+2024-06-15 22:23:06.560  INFO 9223 --- [main] c.e.springsoap.SpringSoapApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-06-15 22:23:07.011  INFO 9223 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'webServiceConfig' of type [com.example.springsoap.WebServiceConfig$$EnhancerBySpringCGLIB$$c390316e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-15 22:23:07.024  INFO 9223 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$8922b6e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-15 22:23:07.048  INFO 9223 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-06-15 22:23:07.317  INFO 9223 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-06-15 22:23:07.326  INFO 9223 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-15 22:23:07.330  INFO 9223 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-06-15 22:23:07.421  INFO 9223 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-15 22:23:07.422  INFO 9223 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 823 ms
+2024-06-15 22:23:07.773  INFO 9223 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-06-15 22:23:07.778  INFO 9223 --- [main] c.e.springsoap.SpringSoapApplication     : Started SpringSoapApplication in 1.435 seconds (JVM running for 1.716)
+2024-06-15 22:23:20.586  INFO 9223 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring MessageDispatcherServlet 'messageDispatcherServlet'
+2024-06-15 22:23:20.587  INFO 9223 --- [http-nio-8081-exec-1] o.s.w.t.http.MessageDispatcherServlet    : Initializing Servlet 'messageDispatcherServlet'
+2024-06-15 22:23:20.594  INFO 9223 --- [http-nio-8081-exec-1] o.s.ws.soap.saaj.SaajSoapMessageFactory  : Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+2024-06-15 22:23:20.612  INFO 9223 --- [http-nio-8081-exec-1] o.s.w.t.http.MessageDispatcherServlet    : Completed initialization in 22 ms
+2024-06-15 22:43:53.411  INFO 9586 --- [main] c.e.springsoap.SkipassRepositoryTest     : Starting SkipassRepositoryTest using Java 17.0.11 on liesvm with PID 9586 (started by lies in /home/lies/Documents/dapp2024/ds_final_project/suppliers/ski_passes)
+2024-06-15 22:43:53.429  INFO 9586 --- [main] c.e.springsoap.SkipassRepositoryTest     : No active profile set, falling back to 1 default profile: "default"
+2024-06-15 22:43:54.600  INFO 9586 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'webServiceConfig' of type [com.example.springsoap.WebServiceConfig$$EnhancerBySpringCGLIB$$76de66af] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-15 22:43:54.614  INFO 9586 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$3c70ec21] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-15 22:43:54.655  INFO 9586 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-06-15 22:43:55.464  INFO 9586 --- [main] c.e.springsoap.SkipassRepositoryTest     : Started SkipassRepositoryTest in 2.467 seconds (JVM running for 3.927)
+2024-06-15 22:43:55.848  INFO 9586 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - 82dc0bfd-406d-494a-9778-b66d5d9b46b8 - Vote request received.
+2024-06-15 22:43:55.850  INFO 9586 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - 82dc0bfd-406d-494a-9778-b66d5d9b46b8 - Vote given: VOTE_COMMIT.
+2024-06-15 22:43:55.850  INFO 9586 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - 82dc0bfd-406d-494a-9778-b66d5d9b46b8 - Locked the stock.
+2024-06-15 22:43:55.850  INFO 9586 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - 82dc0bfd-406d-494a-9778-b66d5d9b46b8 - Received booking request with decision: GLOBAL_COMMIT.
+2024-06-15 22:43:55.850  INFO 9586 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 3e6aabd4-e970-4459-8573-078d799046da - Vote request received.
+2024-06-15 22:43:55.850  INFO 9586 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 3e6aabd4-e970-4459-8573-078d799046da - Vote given: VOTE_COMMIT.
+2024-06-15 22:43:55.850  INFO 9586 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 3e6aabd4-e970-4459-8573-078d799046da - Locked the stock.
+2024-06-15 22:43:55.850  INFO 9586 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 3e6aabd4-e970-4459-8573-078d799046da - Received booking request with decision: GLOBAL_COMMIT.
+2024-06-15 22:53:06.830  INFO 10054 --- [main] c.e.springsoap.SkipassRepositoryTest     : Starting SkipassRepositoryTest using Java 17.0.11 on liesvm with PID 10054 (started by lies in /home/lies/Documents/dapp2024/ds_final_project/suppliers/ski_passes)
+2024-06-15 22:53:06.832  INFO 10054 --- [main] c.e.springsoap.SkipassRepositoryTest     : No active profile set, falling back to 1 default profile: "default"
+2024-06-15 22:53:07.976  INFO 10054 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'webServiceConfig' of type [com.example.springsoap.WebServiceConfig$$EnhancerBySpringCGLIB$$6a2ba81f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-15 22:53:07.978  INFO 10054 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$2fbe2d91] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-15 22:53:08.076  INFO 10054 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-06-15 22:53:09.033  INFO 10054 --- [main] c.e.springsoap.SkipassRepositoryTest     : Started SkipassRepositoryTest in 2.681 seconds (JVM running for 4.454)
+2024-06-15 22:53:09.293  INFO 10054 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - a7b087f0-80f7-454d-aa18-1f8848763945 - Vote request received.
+2024-06-15 22:53:09.294  INFO 10054 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - Stock locked
+2024-06-15 22:53:09.295  INFO 10054 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - Stock locked
+2024-06-15 22:53:09.296  INFO 10054 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - a7b087f0-80f7-454d-aa18-1f8848763945 - Vote given: VOTE_COMMIT.
+2024-06-15 22:53:09.296  INFO 10054 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - a7b087f0-80f7-454d-aa18-1f8848763945 - Received booking request with decision: GLOBAL_COMMIT.
+2024-06-15 22:53:09.298  INFO 10054 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 3d37325f-0ced-417b-9e6f-dfa9ce1f351a - Vote request received.
+2024-06-15 22:53:09.303  INFO 10054 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - Changes made for transactionId: a7b087f0-80f7-454d-aa18-1f8848763945
+2024-06-15 22:53:09.304  INFO 10054 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - Stock unlocked 2
+2024-06-15 22:53:09.305  INFO 10054 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - Stock locked
+2024-06-15 22:53:09.305  INFO 10054 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - Stock locked
+2024-06-15 22:53:09.305  INFO 10054 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 3d37325f-0ced-417b-9e6f-dfa9ce1f351a - Vote given: VOTE_COMMIT.
+2024-06-15 22:53:09.305  INFO 10054 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - 3d37325f-0ced-417b-9e6f-dfa9ce1f351a - Received booking request with decision: GLOBAL_COMMIT.
+2024-06-15 22:53:09.305  INFO 10054 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - Changes made for transactionId: 3d37325f-0ced-417b-9e6f-dfa9ce1f351a
+2024-06-15 22:53:09.305  INFO 10054 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - Stock unlocked 2
+2024-06-15 22:53:09.305  INFO 10054 --- [Thread-2] c.example.springsoap.SkipassRepository   : 2PC - Stock unlocked 2
+2024-06-15 22:53:09.305  INFO 10054 --- [Thread-1] c.example.springsoap.SkipassRepository   : 2PC - Stock unlocked 2
+2024-06-15 23:00:01.432  INFO 10642 --- [main] c.e.springsoap.SpringSoapApplication     : Starting SpringSoapApplication using Java 17.0.11 on liesvm with PID 10642 (/home/lies/Documents/dapp2024/ds_final_project/suppliers/ski_passes/target/classes started by lies in /home/lies/Documents/dapp2024/ds_final_project/suppliers/ski_passes)
+2024-06-15 23:00:01.437  INFO 10642 --- [main] c.e.springsoap.SpringSoapApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-06-15 23:00:02.048  INFO 10642 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'webServiceConfig' of type [com.example.springsoap.WebServiceConfig$$EnhancerBySpringCGLIB$$92cd67af] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-15 23:00:02.049  INFO 10642 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$585fed21] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-15 23:00:02.093  INFO 10642 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-06-15 23:00:02.294  INFO 10642 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-06-15 23:00:02.302  INFO 10642 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-15 23:00:02.303  INFO 10642 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-06-15 23:00:02.362  INFO 10642 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-15 23:00:02.362  INFO 10642 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 822 ms
+2024-06-15 23:00:02.707  INFO 10642 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-06-15 23:00:02.715  INFO 10642 --- [main] c.e.springsoap.SpringSoapApplication     : Started SpringSoapApplication in 1.551 seconds (JVM running for 1.792)

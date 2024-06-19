@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:gs="http://skipass.io/gt/webservice">
+    <soapenv:Header>
+        <gs:apiKey>Iw8zeveVyaPNWonPNaU0213uw3g6Ei</gs:apiKey>
+    </soapenv:Header>
+    <soapenv:Body>
+        <gs:getStockRequest/>
+    </soapenv:Body>
+</soapenv:Envelope>

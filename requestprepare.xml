@@ -1,0 +1,21 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:gs="http://skipass.io/gt/webservice">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <gs:prepareRequest>
+            <gs:transactionId>13</gs:transactionId>
+            <gs:orders>
+                <gs:stockId>1</gs:stockId>
+                <gs:amount>1</gs:amount>
+            </gs:orders>
+            <gs:orders>
+                <gs:stockId>2</gs:stockId>
+                <gs:amount>2</gs:amount>
+            </gs:orders>
+            <gs:orders>
+                <gs:stockId>3</gs:stockId>
+                <gs:amount>3</gs:amount>
+            </gs:orders>
+        </gs:prepareRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

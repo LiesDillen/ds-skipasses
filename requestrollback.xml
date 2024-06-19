@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:gs="http://skipass.io/gt/webservice">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <gs:rollBackRequest>
+            <gs:transactionId>1234</gs:transactionId>
+        </gs:rollBackRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

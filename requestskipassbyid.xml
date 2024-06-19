@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:gs="http://skipass.io/gt/webservice">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <gs:getSkipassByIdRequest>
+            <gs:id>5</gs:id>
+        </gs:getSkipassByIdRequest>
+    </soapenv:Body>
+</soapenv:Envelope>
