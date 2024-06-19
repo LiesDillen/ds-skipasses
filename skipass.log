@@ -97,3 +97,5 @@
 2024-06-19 21:34:15.100  INFO 25992 --- [http-nio-8081-exec-5] c.example.springsoap.SkipassRepository   : 2PC - Stock locked
 2024-06-19 21:34:15.100  INFO 25992 --- [http-nio-8081-exec-5] c.example.springsoap.SkipassRepository   : 2PC - Stock locked
 2024-06-19 21:34:15.100  INFO 25992 --- [http-nio-8081-exec-5] c.example.springsoap.SkipassRepository   : 2PC - 13 - Vote given: VOTE_COMMIT.
+2024-06-19 21:34:45.855  INFO 25992 --- [http-nio-8081-exec-6] c.example.springsoap.SkipassRepository   : 2PC - 13 - Received booking request with decision: GLOBAL_COMMIT.
+2024-06-19 21:34:45.863  INFO 25992 --- [http-nio-8081-exec-6] c.example.springsoap.SkipassRepository   : 2PC - Changes made for transactionId: 13
