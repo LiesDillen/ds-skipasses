@@ -20,7 +20,7 @@ import org.slf4j.LoggerFactory;
 @Component
 public class SkipassRepository
 {
-    private static final String STOCK_FILE = "stock.csv";
+    private static final String STOCK_FILE_PATH = "stock.csv";
     private static final Map<Integer, Skipass> stock = new HashMap<>();
     private static final Map<String, List<Order>> transactionChanges = new HashMap<>();
     private static final Map<Integer, Lock> stockLocks = new ConcurrentHashMap<>();
@@ -30,28 +30,22 @@ public class SkipassRepository
     public void initData()
     {
         logger.info("DEBUG: start initialising data");
-        try (InputStream is = getClass().getClassLoader().getResourceAsStream(STOCK_FILE)) {
-            if (is == null) {
-                logger.error("Failed to load stock.csv - file not found in resources.");
-                return;
-            }
-            try (BufferedReader br = new BufferedReader(new InputStreamReader(is))) {
-                logger.info("DEBUG: reading from stock.csv in initData");
-                br.lines().skip(1).forEach(line -> {
-                    String[] parts = line.split(",");
-                    int id = Integer.parseInt(parts[0]);
-                    Passtype passtype = Passtype.valueOf(parts[1].toUpperCase());
-                    float price = Float.parseFloat(parts[2]);
-                    int availableAmount = Integer.parseInt(parts[3]);
-                    Skipass s = new Skipass();
-                    s.setId(id);
-                    s.setSkipassType(passtype);
-                    s.setPrice(price);
-                    s.setAvailableAmount(availableAmount);
-                    stock.put(id, s);
-                    stockLocks.put(id, new ReentrantLock());
-                });
-            }
+        
+        try (BufferedReader br = new BufferedReader(new FileReader(STOCK_FILE_PATH))) {
+            br.lines().skip(1).forEach(line -> {
+                String[] parts = line.split(",");
+                int id = Integer.parseInt(parts[0]);
+                Passtype passtype = Passtype.valueOf(parts[1].toUpperCase());
+                float price = Float.parseFloat(parts[2]);
+                int availableAmount = Integer.parseInt(parts[3]);
+                Skipass s = new Skipass();
+                s.setId(id);
+                s.setSkipassType(passtype);
+                s.setPrice(price);
+                s.setAvailableAmount(availableAmount);
+                stock.put(id, s);
+                stockLocks.put(id, new ReentrantLock());
+            });
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -77,25 +71,23 @@ public class SkipassRepository
         vote.setVote(ProtocolMessage.VOTE_COMMIT);
         vote.setError("No error, transaction prepared.");
 
+        File stockFile = new File(STOCK_FILE_PATH);
         Map<Passtype, Integer> stockMap = new HashMap<>();
 
-        try (InputStream is = getClass().getClassLoader().getResourceAsStream(STOCK_FILE)) {
-            if (is == null) {
-                logger.error("Failed to load stock.csv in sendVote - file not found in resources.");
-                vote.setVote(ProtocolMessage.VOTE_ABORT);
-                vote.setError("Could not read from stock");
-                return vote;
+        try (BufferedReader br = new BufferedReader(new FileReader(stockFile))) {
+            br.readLine(); // Skip header
+            String line;
+            while ((line = br.readLine()) != null) {
+                String[] parts = line.split(",");
+                Passtype passtype = Passtype.valueOf(parts[1].toUpperCase());
+                int stockCount = Integer.parseInt(parts[3]);
+                stockMap.put(passtype, stockCount);
             }
-            try (BufferedReader br = new BufferedReader(new InputStreamReader(is))) {
-                br.readLine();
-                String line;
-                while ((line = br.readLine()) != null) {
-                    String[] parts = line.split(",");
-                    Passtype passtype = Passtype.valueOf(parts[1].toUpperCase());
-                    int stockCount = Integer.parseInt(parts[3]);
-                    stockMap.put(passtype, stockCount);
-                }
-            }
+        } catch (FileNotFoundException e) {
+            logger.error("Failed to load stock.csv in sendVote - file not found.", e);
+            vote.setVote(ProtocolMessage.VOTE_ABORT);
+            vote.setError("Could not read from stock");
+            return vote;
         }
 
         for (Order order : orders) {
@@ -143,8 +135,8 @@ public class SkipassRepository
             return ProtocolMessage.ACKNOWLEDGE;
         }
 
-        File tempFile = new File(STOCK_FILE + ".tmp");
-        File stockFile = new File(getClass().getClassLoader().getResource(STOCK_FILE).getFile());
+        File tempFile = new File(STOCK_FILE_PATH + ".tmp");
+        File stockFile = new File(STOCK_FILE_PATH);
 
         Map<Passtype, Integer> requiredStockUpdates = new HashMap<>();
         for (Order order : orders) {
@@ -157,32 +149,29 @@ public class SkipassRepository
             }
         }
 
-        try (InputStream is = getClass().getClassLoader().getResourceAsStream(STOCK_FILE)) {
-            assert is != null;
-            try (BufferedReader br = new BufferedReader(new InputStreamReader(is));
-                 BufferedWriter bw = new BufferedWriter(new FileWriter(tempFile))) {
-                bw.write(br.readLine() + "\n"); // Write header
+        try (BufferedReader br = new BufferedReader(new FileReader(stockFile));
+             BufferedWriter bw = new BufferedWriter(new FileWriter(tempFile))) {
+            bw.write(br.readLine() + "\n"); // Write header
 
-                String line;
-                while ((line = br.readLine()) != null) {
-                    String[] parts = line.split(",");
-                    int id = Integer.parseInt(parts[0]);
-                    Passtype currentPasstype = Passtype.valueOf(parts[1].toUpperCase());
-                    float price = Float.parseFloat(parts[2]);
-                    int stockCount = Integer.parseInt(parts[3]);
+            String line;
+            while ((line = br.readLine()) != null) {
+                String[] parts = line.split(",");
+                int id = Integer.parseInt(parts[0]);
+                Passtype currentPasstype = Passtype.valueOf(parts[1].toUpperCase());
+                float price = Float.parseFloat(parts[2]);
+                int stockCount = Integer.parseInt(parts[3]);
 
-                    if (requiredStockUpdates.containsKey(currentPasstype)) {
-                        int requiredAmount = requiredStockUpdates.get(currentPasstype);
-                        if (stockCount >= requiredAmount) {
-                            stockCount -= requiredAmount;
-                            requiredStockUpdates.remove(currentPasstype);
-                        } else {
-                            logger.error("2PC - {} - Insufficient stock for requested type {} for commit phase.", transactionId, currentPasstype);
-                            throw new InsufficientStockException("Insufficient stock for pass type: " + currentPasstype);
-                        }
+                if (requiredStockUpdates.containsKey(currentPasstype)) {
+                    int requiredAmount = requiredStockUpdates.get(currentPasstype);
+                    if (stockCount >= requiredAmount) {
+                        stockCount -= requiredAmount;
+                        requiredStockUpdates.remove(currentPasstype);
+                    } else {
+                        logger.error("2PC - {} - Insufficient stock for requested type {} for commit phase.", transactionId, currentPasstype);
+                        throw new InsufficientStockException("Insufficient stock for pass type: " + currentPasstype);
                     }
-                    bw.write(id + "," + currentPasstype.toString().toLowerCase() + "," + price + "," + stockCount + "\n");
                 }
+                bw.write(id + "," + currentPasstype.toString().toLowerCase() + "," + price + "," + stockCount + "\n");
             }
         }
         Files.move(tempFile.toPath(), stockFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
@@ -212,8 +201,8 @@ public class SkipassRepository
             logger.warn("2PC - {} - No changes recorded for rollback.", transactionId);
         } else {
 
-            File tempFile = new File(STOCK_FILE + ".tmp");
-            File stockFile = new File(Objects.requireNonNull(getClass().getClassLoader().getResource(STOCK_FILE)).getFile());
+            File tempFile = new File(STOCK_FILE_PATH + ".tmp");
+            File stockFile = new File(STOCK_FILE_PATH);
 
             Map<Passtype, Integer> rollbackStockUpdates = new HashMap<>();
             for (Order order : orders) {
@@ -223,8 +212,7 @@ public class SkipassRepository
                 }
             }
 
-            try (InputStream is = getClass().getClassLoader().getResourceAsStream(STOCK_FILE);
-                 BufferedReader br = new BufferedReader(new InputStreamReader(is));
+            try (BufferedReader br = new BufferedReader(new FileReader(stockFile));
                  BufferedWriter bw = new BufferedWriter(new FileWriter(tempFile))) {
                 bw.write(br.readLine() + "\n"); // Write header
 
